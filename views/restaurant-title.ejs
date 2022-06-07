@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('includes/head') %>
+    <title>Tittle of Restaurant</title>
+</head>
+<body>
+    
+    <%- include('includes/header') %>
+    <main>
+
+        
+        <div class="">
+            <h1>Reconmmended Restaurant</h1>
+            <% if (numberOfRestaurant === 0) { %>
+                <p>Unfortunately we have no Restaurant yet - maybe start Reconmmending some?</p>
+                <% } else { %>
+                    <p>Find your next Favorite Restaurant with help of our Users!</p>
+                    <p>we found <%= numberOfRestaurant %> Restaurant</p>
+
+
+                    <ul class="web-title">
+                            <% for (const Restaurant of Restaurants) { %>
+                                <li class="restaurant-item">
+                                    <article>
+                                        <h3> <%= Restaurant.name %></h3>
+                                        <div class="restaurant-meta">
+                                            <p><%= Restaurant.country %> </p>
+                                            <p><%= Restaurant.address %> </p>
+                                        </div>
+                                       
+                                        <p><%= Restaurant.description %> </p>
+                                        <img src="<%= Restaurant.image %>" alt="">
+                                        <div class="ends-link">
+                                            <a href="<%= Restaurant.website %>" class="view-link">View Website</a>
+                                        </div>
+                                         
+                                </article>
+
+                                </li>
+                               
+                        <% } %>  
+                    </ul>
+                    <% } %>
+                          
+                  
+              
+                </div>
+    
+           
+                         
+    </main>
+    
+</body>
+</html>

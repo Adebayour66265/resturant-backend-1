@@ -1,0 +1,120 @@
+
+.post-product{
+    display: flex;
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-gap: 1rem;
+    justify-content: space-between;
+    /* margin: 20px auto; */
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    /* padding: 1rem; */
+}
+.post-product a{
+    color: #fff;
+}
+.section1{  
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: medium;
+    text-transform: uppercase;
+}
+.section2{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+
+
+.web-title{
+    /* padding: 2rem;
+    background-color: rgb(219, 173, 88);
+    margin: 1rem auto;
+    width: 40%;
+    color: #fff;
+    text-align: start;
+    border-radius: 5px;
+    list-style: none; */
+
+
+    display: flex;
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+.restaurant-item{
+    padding: 5rem;
+    width: 100%;
+    height: 55vh;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+.restaurant-item img{
+    width: 40%;
+    height: 15vh;
+    border-radius: 10px;
+}
+.view-link{
+    background-color: var(  --clr-grey-4);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+.ends-link{
+    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-section{
+    background-color: var(--clr-grey-4);
+    padding: 2rem;
+    width: 100%;
+    height: 60vh;
+    color: #fff;
+    text-align: center;
+    margin: 5rem;
+    border-radius: 10px;
+}
+.form-section  label{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+}
+.form-section input{
+    width: 100%;
+    height: 30px;
+    padding: 0 .3rem;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    margin: 5px 0;
+}
+.reshare{
+    display: flex;
+    justify-content: flex-start;
+}
+.view-share{
+    background-color: rgb(83, 58, 12);
+    color: #fff;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: 0 3px;
+    border: 2px solid #333 ;
+}
+
+
+@media only screen and (max-width: 700px){
+   /*  */
+}

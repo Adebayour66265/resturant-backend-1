@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('includes/head') %>
+    <title>Share your Website</title>
+</head>
+<body>
+
+    <%- include('includes/header') %>
+    
+
+    <main>
+        
+        <h1>Share Your Favorite Restaurant</h1>
+
+        <section class="form-sect">
+            <form class="form-section" action="/user" method="POST">
+               
+                    <label for="res-name">Restaurant name</label>
+                    <input type="text" placeholder="Restaurant name" name="name">
+              
+                    <label for="res-address">Restaurant Address</label>
+                    <input type="text" placeholder="Restaurant Address" name="address">
+             
+                    <label for="res-type">Type of Cuisine</label>
+                    <input type="text" placeholder="e.g. Nigeria" name="country">
+               
+                    <label for="res-name">Restaurant Website</label>
+                    <input type="url" placeholder="Restaurant Website" required name="website">
+
+                    <label for="image" id="image">
+                        <input type="file" name="image">
+                    </label>
+                
+                    <!-- <label for="res-name">Why do you Reconmmend it?</label>
+                    <textarea name="description" id="" cols="89" rows="10"></textarea> -->
+               
+                    <div class="reshare">
+                        <button class="view-share">Share Restaurant</button>
+                    </div>
+            </form>
+        </section>
+       
+
+    </main>
+</body>
+</html>
