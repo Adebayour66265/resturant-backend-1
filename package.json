@@ -2,9 +2,9 @@
   "name": "node-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",

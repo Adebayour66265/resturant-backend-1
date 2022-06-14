@@ -56,17 +56,8 @@ app.post('/user', (req, res) =>{
     res.redirect('/confirm')
 })
 
+const PORT = process.env.PORT || 3000
 
-
-
-
-
-
-
-
-
-
-
-app.listen(PORT = 3000, ()=>{
-    console.log(`Connected sucessfully with Server ${3000}`);
+app.listen(PORT, ()=>{
+    console.log(`Connected sucessfully with Server ${PORT}`);
 })
